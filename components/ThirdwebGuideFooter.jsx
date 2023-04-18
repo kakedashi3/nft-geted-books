@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // 追加
 
 export default function ThirdwebGuideFooter() {
   return (
@@ -31,11 +32,13 @@ export default function ThirdwebGuideFooter() {
           right: 18,
         }}
       >
-        <img
+        {/* <img>タグを<Image>コンポーネントに置き換え */}
+        <Image
           src={"/github.png"}
           width={40}
           height={40}
           role="button"
+          alt="GitHub" // alt属性を追加
           style={{ cursor: "pointer" }}
           onClick={() =>
             window.open(
