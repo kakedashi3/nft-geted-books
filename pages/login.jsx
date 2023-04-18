@@ -9,29 +9,17 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Auth - NFT Gated Content</h1>
+      <h1 className={styles.h1}>カケダシッターと秘密の部屋へようこそ</h1>
       <p className={styles.explain}>
-        Serve exclusive content to users who own an NFT from your collection,
-        using{" "}
-        <b>
-          <a
-            href="https://portal.thirdweb.com/building-web3-apps/authenticating-users"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.purple}
-          >
-            Auth
-          </a>
-        </b>
-        !
+        
       </p>
 
       <p className={styles.explain}>
-        You cannot access the{" "}
+        この▶▶▶{" "}
         <Link className={styles.purple} href="/">
-          main page
+          🚪
         </Link>{" "}
-        unless you own an NFT from our collection!
+        ◀◀◀に鍵NFTを差し込んでください。
       </p>
 
       <hr className={styles.divider} />

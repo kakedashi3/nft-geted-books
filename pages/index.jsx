@@ -19,13 +19,13 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Restricted Access Page</h1>
-      <p className={styles.explain}>
+      <h1 className={styles.h1}>ようこそKakedashibooks秘密の部屋へ</h1>
+      {/* <p className={styles.explain}>
         Thanks for being a member of our NFT community!
-      </p>
+      </p> */}
 
       <button className={styles.mainButton} onClick={logout}>
-        Logout
+        退室
       </button>
     </div>
   );
@@ -53,7 +53,7 @@ export async function getServerSideProps(context) {
   // Instantiate our SDK
   const sdk = ThirdwebSDK.fromPrivateKey(
     process.env.THIRDWEB_AUTH_PRIVATE_KEY,
-    "mumbai"
+    "polygon"
   );
 
   // Check to see if the user has an NFT
